@@ -1,0 +1,431 @@
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+html,body{
+    overflow-x: hidden;
+}
+body{
+    font-family: 'Space Grotesk', sans-serif;
+    text-transform: uppercase;
+    background-color: white;
+    font-weight: 500;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+img.big-image{
+    width: 450px;
+    overflow-x: hidden;
+    height: 679px;
+    position: relative;
+   
+}
+.left-side{
+    position: relative;
+   
+
+}
+img.cardimage1{
+    position: absolute;
+    top: 100px;
+    right: 200px;
+    width: 400px;
+   
+}
+img.cardimage2{
+    position: absolute;
+    top: 350px;
+    right: 100px;
+    width: 400px;
+   
+}
+.first-card{
+    z-index: 2;
+}
+.firstcardtext{
+    position: absolute;
+    top: 220px;
+    right: 220px;
+    
+    color: hsl(270, 3%, 87%);
+    
+}
+/* span.card-text1{
+    font-size: 23px;
+    letter-spacing: 5px;
+    font-weight: 500;
+    margin-right: 10px;
+}
+span.card-text2{
+    font-size: 15px;
+    margin-top: 20px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+span.small1{
+    margin-right: 70px;
+    margin-left: 30px;
+}
+span.small2{
+margin-left: 100px;
+}
+.firstcard1{
+    margin-bottom: 3px;
+    margin-left: 100px;
+}
+.firstcard2{
+    display: flex;
+    justify-content: space-between; 
+  
+   margin-top: 10px;
+  margin-left: 100px;
+} */
+span.card-text1{
+
+    font-size: 27px;
+    font-weight: 500;
+    letter-spacing: 2px;
+ /* word-spacing: 2px; */
+    margin-left: 6px;
+    margin-right: 20px;
+   
+}
+.firstcard2{
+    display: flex;
+    justify-content: space-between; 
+    margin-top: 20px;
+  
+}
+span.small1{
+    margin-right: 170px;
+  
+}
+.second-card{
+z-index: 2;
+}
+.secondcardtext{
+    position: absolute;
+    top: 450px;
+    right: 150px;
+    color: white;
+}
+.card-text3{
+    font-size: 14px;
+    font-weight: 500;
+
+}
+.big-circle{
+    position: absolute;
+    border: solid 20px white;
+    top: -100px;
+    right: 150px;
+    border-radius: 40px;
+    margin-right: 170px;
+
+
+    height: 1px;
+
+}
+.small-circle{
+    position: absolute;
+    border: solid 10px rgb(255, 255, 255);
+
+    top: -90px;
+    right: 150px;
+    border-radius: 40px;
+    margin-right: 130px;
+    height: 1px;
+    
+}
+
+
+
+.right-side{
+    place-content: center;
+    width: 50%;
+    margin: 150px 130px;
+    display: inline-block;
+}
+.big-text{
+    font-weight: 500;
+    font-size: 13px;
+    letter-spacing: 2px;
+    margin-bottom: 4px;
+}
+.top-side, .middle-side , .bottom-side{
+    margin-bottom: 20px;
+}
+input.gray-area{
+border-radius: 6px;
+width: 350px;
+height: 40px;
+border: 1px solid hsl(270, 3%, 87%) ;
+cursor: pointer;
+outline: none;
+}
+
+input::placeholder {
+   color:hsl(279, 6%, 55%);
+  padding: 10px;
+  }
+.bottom-side{
+    display: flex;
+ 
+
+}
+input.gray-area2{
+    border-radius: 6px;
+    width: 70px;
+    height: 40px;
+    margin-right: 10px;
+    border: 1px solid hsl(270, 3%, 87%) ;
+    cursor: pointer;
+    outline: none;
+    }
+    .right-bottom{
+        margin-left: 20px;
+    }
+    h5{
+        text-transform: initial;
+        margin-top: 10px;
+    }
+    input.gray-area3{
+        border-radius: 6px;
+        width: 160px;
+        height: 40px;
+        cursor: pointer;
+        border: 1px solid hsl(270, 3%, 87%) ;
+        outline: none;
+        }
+button.btn-ppl{
+     width: 350px;
+    height: 40px;
+ border-radius: 6px;
+ background-color: hsl(278, 68%, 11%);
+ color: white;
+ cursor: pointer;
+}
+.thanks{
+    display: none;
+    place-content: center;
+    width: 50%;
+    margin: 200px 100px;
+    text-align: center;
+}
+img.big-check{
+    margin-bottom: 30px;
+}
+.thtext{
+    font-size: 30px;
+    color: hsl(278, 68%, 11%);
+    font-weight: 500;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+.thtext2{
+    font-size: 15px;
+    color: hsl(279, 6%, 55%);
+    text-transform: initial;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 35px;
+}
+button.btn2{
+    width: 350px;
+    height: 50px;
+ border-radius: 6px;
+ background-color: hsl(278, 68%, 11%);
+ color: white;
+ cursor: pointer;
+ font-size: 15px;
+ font-family: 'Space Grotesk', sans-serif;
+ font-weight: 500;
+}
+
+@media only screen and (max-width:  627px) and (min-width:200px)   {
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr ;
+    }
+    /* top-side */
+    img.big-image{
+        width: 100%;
+        overflow-x: hidden;
+        height: 309px;
+        position: relative;
+    }
+    
+   img.cardimage1{
+     width: 80%;
+     top: 250px;
+     right: 60px;
+     position: absolute;
+     z-index: 2;
+   }
+   .firstcardtext{
+    position: absolute;
+    top: 320px;
+    right: 70px;
+    z-index: 2;
+    color: hsl(270, 3%, 87%);
+    font-size: 13px;
+    width: 75%;
+   
+    
+}
+span.card-text1{
+
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 2px;
+ /* word-spacing: 2px; */
+    margin-left: 10px;
+    
+   
+}
+span.small1{
+    margin-right: 20px;
+    margin-left: 10px;
+  
+}
+.big-circle{
+    border: solid 15px white;
+    top: -40px;
+    right: 70px;
+}
+.small-circle{
+    border: solid 10px white;
+    top: -35px;
+    right: 75px;
+}
+
+
+   img.cardimage2{
+    position:absolute;
+    width: 80%;
+    top: 170px;
+    right: 10px;
+   }
+   .secondcardtext{
+    position: absolute;
+    top: 225px;
+    right: 70px;
+    color: white;
+}
+   .second-card{
+    z-index: 1;
+    
+    }
+    /* bottom-side */
+    .right-side{
+      
+      margin: 140px 30px;
+      width: 100%;
+    }
+    .bottom-side{
+        margin-bottom: 20px;
+        width: 110%;
+    }
+    .right-bottom{
+        margin-left: 20px;
+        overflow-x: hidden;
+    }
+    input.gray-area{
+        border-radius: 6px;
+        width: 300px;
+        height: 40px;
+        border: 1px solid hsl(270, 3%, 87%) ;
+        cursor: pointer;
+        outline: none;
+        }
+        input.gray-area3{
+            width: 110px;
+        }
+        button.btn-ppl{
+            width: 300px;
+           height: 40px;
+        border-radius: 6px;
+        background-color: hsl(278, 68%, 11%);
+        color: white;
+        cursor: pointer;
+       }
+       /* thanks */
+       .thanks{
+      overflow: hidden;
+        place-content: center;
+        width: 50%;
+      
+        text-align: center;
+    }
+    img.big-check{
+        margin-bottom: 30px;
+    }
+    .thtext{
+        font-size: 25px;
+        color: hsl(278, 68%, 11%);
+        font-weight: 500;
+        margin-bottom: 15px;
+        letter-spacing: 2px;
+    }
+    .thtext2{
+        font-size: 15px;
+        color: hsl(279, 6%, 55%);
+        text-transform: initial;
+        font-weight: 500;
+        letter-spacing: 1px;
+        margin-bottom: 35px;
+    }
+    button.btn2{
+        width: 150px;
+        margin-right: 500px;
+        height: 50px;
+     border-radius: 6px;
+     background-color: hsl(278, 68%, 11%);
+     color: white;
+     cursor: pointer;
+     font-size: 15px;
+     font-family: 'Space Grotesk', sans-serif;
+     font-weight: 500;
+    }
+    
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
